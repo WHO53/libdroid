@@ -13,3 +13,11 @@ executable(
   dependencies: libdroid_deps,
   install: true
 )
+
+executable(
+  'libdroid-sensor-tool',
+  ['sensor.c'],
+  link_with: [libdroid_lib],
+  dependencies: libdroid_deps,
+  install: true
+)
