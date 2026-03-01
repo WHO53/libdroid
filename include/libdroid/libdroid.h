@@ -44,6 +44,7 @@ G_BEGIN_DECLS
 
 #define LIBDROID_INSIDE
 # include <libdroid/libdroid-version.h>
+# include <libdroid/sensor.h>
 # include <libdroid/leds.h>
 # include <libdroid/vibra.h>
 #undef LIBDROID_INSIDE

@@ -94,7 +94,7 @@ binder_init (const char             *device,
                                                      fqname, NULL);
   if (!*remote) {
     g_warning ("Failed to get hal service remote for %s", fqname);
-    g_clear_object (&*service_manager);
+    gbinder_servicemanager_unref (*service_manager);
     *service_manager = NULL;
     return FALSE;
   }
@@ -102,8 +102,10 @@ binder_init (const char             *device,
   *client = gbinder_client_new (*remote, iface);
   if (!*client) {
     g_warning ("Failed to get hal service client for %s", iface);
-    g_clear_object (&*remote);
-    g_clear_object (&*service_manager);
+    gbinder_remote_object_unref (*remote);
+    gbinder_servicemanager_unref (*service_manager);
+    *remote = NULL;
+    *service_manager = NULL;
     return FALSE;
   }
 

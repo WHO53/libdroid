@@ -3,6 +3,7 @@ soversion = '1'
 
 libdroid_sources = [
   'binder.c',
+  'sensor.c',
   'leds.c',
   'leds-backend.c',
   'leds-backend-aidl.c',
