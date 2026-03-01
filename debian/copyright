@@ -7,6 +7,12 @@ Files: *
 Copyright: 2024 Eugenio Paolantonio (g7) <me@medesimo.eu>
 License: BSD-3-Clause
 
+Files: include/libdroid/sensor.h src/sensor.c src/sensor-binder-types.h
+Copyright: 2013 Jolla Ltd.
+           2025 Jollyboys Ltd.
+           2026 Deepak Meena <who53@disroot.org>
+License: LGPL-2.1-only
+
 Files: debian/*
 Copyright: 2024 Eugenio Paolantonio (g7) <eugenio@droidian.org>
 License: GPL-3+
@@ -59,3 +65,11 @@ License: GPL-3+
  .
  On Debian systems, the complete text of the GNU General
  Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
+
+License: LGPL-2.1-only
+ This program is free software; you can redistribute it and/or modify it
+ under the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; version 2.1 of the License.
+ .
+ On Debian systems, the complete text of version 2.1 of the GNU Lesser
+ General Public License can be found in '/usr/share/common-licenses/LGPL-2.1'.
